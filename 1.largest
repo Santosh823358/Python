@@ -1,0 +1,12 @@
+def ls2():
+    a = int(input("Enter the first number:"))
+    b = int(input("Enter the second number:"))
+
+    if a>b:
+        print("A is greatest")
+    elif a<b:
+        print("B is greatest")
+    else:
+        print("A and B are equal")
+
+ls2()

@@ -1,0 +1,11 @@
+# print uppercase alphabets
+print("uppercase alphabets:")
+for char in range(ord('A'), ord('Z') + 1):
+    print(chr(char), end=" ")
+print()
+
+# print lowercase alphabets.
+print("lowercase alphabets:")
+for char in range(ord('a'), ord('z') + 1):
+    print(chr(char), end=" ")
+    print()

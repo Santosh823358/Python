@@ -1,0 +1,2 @@
+num = input("enter the number: ")
+print("Length of your number is:", len(num))

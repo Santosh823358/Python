@@ -1,0 +1,13 @@
+string1 = input("enter the first string:")
+string2 = input("enter the second string:")
+
+if string1 in string2:
+    print("string1 is found in string2")
+elif string2 in string1:
+    print("string2 is found in string1")
+else:
+    print("Neither string is found in one another")
+
+
+ 
+

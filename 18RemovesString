@@ -1,0 +1,6 @@
+def remove_substring(string1, string2):
+    return string1.replace(string2,"")
+string1 = input("enter a string:")
+string2 = input("enter string to remove:")
+finalstring = remove_substring(string1, string2)
+print(finalstring)

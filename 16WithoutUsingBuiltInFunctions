@@ -1,0 +1,36 @@
+def toggle_case(string):
+    string1=''
+    for i in string:
+        if('A'<=i<='Z'):
+            string1+=chr(ord(i)+32)
+        elif('a'<=i<='z'):
+            string1+=chr(ord(i)-32)
+        else:
+            string1+=i
+    
+    print(string1)
+
+def upper_case(string):
+    string1=''
+    for i in string:
+        if('a'<=i<='z'):
+            string1+=chr(ord(i)-32)
+        else:
+            string1+=i
+    
+    print(string1)
+
+def lower_case(string):
+    string1=''
+    for i in string:
+        if('A'<=i<='Z'):
+            string1+=chr(ord(i)+32)
+        else:
+            string1+=i
+    
+    print(string1)
+
+string=input("Enter a string: ")
+toggle_case(string)
+upper_case(string)
+lower_case(string)

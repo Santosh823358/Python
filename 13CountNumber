@@ -1,0 +1,7 @@
+num = int(input("enter the number: "))
+if num == 0:
+    print("zero")
+if num == 1:
+    print("one")
+if(num == 2):
+    print("two")
