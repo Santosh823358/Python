@@ -1,0 +1,10 @@
+import random
+
+# Generate 50 random numbers between 1 and 30
+random_numbers = [random.randint(1, 30) for _ in range(50)]
+
+# Remove duplicates by converting to a set and back to a list
+unique_numbers = list(set(random_numbers))
+
+# Print the result
+print(unique_numbers)

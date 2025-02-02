@@ -1,0 +1,3 @@
+my_list = ["apple", "banana", "cherry", "mango", "strawberry"]
+uppercase_list = [str.upper() for str in my_list]
+print(uppercase_list)
