@@ -1,0 +1,27 @@
+import random
+
+# Generate a list of 5 random odd integers
+odd_numbers = [random.randrange(1, 100, 2) for _ in range(5)]
+print("Original list of 5 odd integers:", odd_numbers)
+
+# Generate a list of 4 random even integers
+even_numbers = [random.randrange(2, 100, 2) for _ in range(4)]
+print("Original list of 4 even integers:", even_numbers)
+
+# Replace the third element of odd_numbers with the list of even_numbers
+odd_numbers[2] = even_numbers
+print("List after replacing the third element with even numbers:", odd_numbers)
+
+# Flatten the list
+flattened_list = []
+for item in odd_numbers:
+    if isinstance(item, list):
+        flattened_list.extend(item)
+    else:
+        flattened_list.append(item)
+
+print("Flattened list:", flattened_list)
+
+# Sort the list
+flattened_list.sort()
+print("Sorted list:", flattened_list)
