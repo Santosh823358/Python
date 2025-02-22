@@ -1,0 +1,19 @@
+# Create an empty set
+names_set = set()
+
+# Add five new names to the set
+names_set.update({"Alice", "Bob", "Charlie", "David", "Eve"})
+
+print("Set after adding names:", names_set)
+
+# Modify one existing name (remove old and add new)
+names_set.discard("Charlie")  # Remove existing name
+names_set.add("Chris")  # Add new modified name
+
+print("Set after modifying a name:", names_set)
+
+# Delete two names
+names_set.discard("Alice")
+names_set.discard("Eve")
+
+print("Set after deleting two names:", names_set)

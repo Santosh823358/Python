@@ -1,0 +1,8 @@
+# List of words
+words = ["apple", "banana", "cherry", "grapes", "mango"]
+
+# converting to uppercase and store them in a list
+uppercase_set = {word.upper() for word in words}
+
+# Print the result
+print(uppercase_set)
