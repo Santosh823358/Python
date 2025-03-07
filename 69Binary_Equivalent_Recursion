@@ -1,0 +1,14 @@
+def binary_equivalent(n):
+    if n == 0:
+        return "0"
+    elif n == 1:
+        return "1"
+    else:
+        return binary_equivalent(n // 2) + str(n % 2)
+
+# Taking user input
+num = int(input("Enter a positive integer: "))
+if num < 0:
+    print("Please enter a positive integer.")
+else:
+    print(f"Binary equivalent of {num} is: {binary_equivalent(num)}")

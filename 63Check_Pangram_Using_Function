@@ -1,0 +1,17 @@
+import string
+
+def is_pangram(sentence):
+    """Check if the given sentence is a pangram."""
+    alphaset = set(string.ascii_lowercase)  # Set of all lowercase alphabets
+    sentence_set = set(sentence.lower())  # Convert sentence to lowercase and create a set
+    return alphaset <= sentence_set  # Check if all alphabets are present
+
+# Test cases
+test_sentences = [
+    "The quick brown fox jumps over the lazy dog",
+    "Crazy Fredrick bought many very exquisite opal jewels",
+    "Hello World"
+]
+
+for sentence in test_sentences:
+    print(f'"{sentence}" is a pangram: {is_pangram(sentence)}')

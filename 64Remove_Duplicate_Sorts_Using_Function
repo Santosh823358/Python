@@ -1,0 +1,17 @@
+def convert(sentence):
+    # Split the sentence into words
+    words = sentence.split()
+    
+    # Remove duplicates by converting to a set
+    unique_words = set(words)
+    
+    # Sort the unique words alphanumerically
+    sorted_words = sorted(unique_words)
+    
+    # Join the words back into a string
+    return " ".join(sorted_words)
+
+# Example usage
+sentence = "apple, banana, apple, orange, banana, mango"
+result = convert(sentence)
+print(result)

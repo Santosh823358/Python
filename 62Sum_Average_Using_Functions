@@ -1,0 +1,9 @@
+def sum_avg(marks):
+    total = sum(marks)
+    average = total / len(marks)
+    return total, average
+
+marks = [1, 2, 3, 4, 5]
+result = sum_avg(marks)
+print(f"Total Marks: {result[0]}")
+print(f"Average Marks: {result[1]}")

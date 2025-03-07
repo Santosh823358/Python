@@ -1,0 +1,8 @@
+def string_length(s):
+    if s == "":  # Base case: if the string is empty, return 0
+        return 0
+    return 1 + string_length(s[1:])  # Recursive case: count 1 and call function on the rest of the string
+
+# Example usage
+s = "hello"
+print("Length of the string:", string_length(s))

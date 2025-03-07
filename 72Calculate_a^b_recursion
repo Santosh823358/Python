@@ -1,0 +1,11 @@
+def power(a, b):
+    if b == 0:
+        return 1
+    return a * power(a, b - 1)
+
+# Taking input from the user
+a = int(input("Enter base (a): "))
+b = int(input("Enter exponent (b): "))
+
+# Calculating and displaying the result
+print(f"{a}^{b} = {power(a, b)}")

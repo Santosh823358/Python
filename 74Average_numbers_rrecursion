@@ -1,0 +1,11 @@
+def recursive_avg(lst, n=None, total=0):
+    if n is None:
+        n = len(lst)
+    if n == 0:
+        return total / len(lst) if lst else 0
+    
+    return recursive_avg(lst, n - 1, total + lst[n - 1])
+
+# Example usage
+numbers = [10, 20, 30, 40, 50]
+print("Average:", recursive_avg(numbers))

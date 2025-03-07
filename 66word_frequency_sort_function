@@ -1,0 +1,15 @@
+def frequency(text):
+    # Convert to lowercase and split into words
+    words = text.lower().split()
+    
+    # Create a dictionary to store word frequencies
+    freq_dict = {}
+    for word in words:
+        freq_dict[word] = freq_dict.get(word, 0) + 1
+    
+    # Sort dictionary by word and return as a list of tuples
+    return sorted(freq_dict.items())
+
+# Example usage
+text = "This is a test. This test is simple."
+print(frequency(text))
