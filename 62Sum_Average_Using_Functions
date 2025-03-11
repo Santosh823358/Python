@@ -1,9 +1,7 @@
-def sum_avg(marks):
-    total = sum(marks)
-    average = total / len(marks)
-    return total, average
+def calc_avg_total(a, b, c):
+    sum = a + b + c
+    avg = sum / 3
+    total = sum
+    return avg, total
 
-marks = [1, 2, 3, 4, 5]
-result = sum_avg(marks)
-print(f"Total Marks: {result[0]}")
-print(f"Average Marks: {result[1]}")
+print(calc_avg_total(1, 2, 3))
