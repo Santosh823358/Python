@@ -1,0 +1,8 @@
+import random
+# Generate a list of 10 different random numbers between -15 and 15
+random_numbers = random.sample(range(-15, 16), 10)
+# Create a new list with the square of each number using map and lambda
+squared_numbers = list(map(lambda x : x**2, random_numbers))
+# Print the results
+print("Random numbers: ", random_numbers)
+print("Squared numbers: ", squared_numbers)

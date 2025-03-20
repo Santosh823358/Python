@@ -1,0 +1,15 @@
+# Define three functions
+def fun():
+    print("Hello from fun")
+
+def disp():
+    print("Hello from disp")
+
+def msg():
+    print("Hello from msg")
+
+functions = [fun, disp, msg]
+
+# Call each functions using loop
+for func in functions:
+    func()

@@ -1,0 +1,3 @@
+faculty_names = ["Santoshg", "Pradeep", "Dharmpatel", "Eva", "Dhaval"]
+filtered_names = list(filter(lambda name: len(name) <= 8, faculty_names))
+print("Faculty_names more than 8 characters: ", faculty_names)
